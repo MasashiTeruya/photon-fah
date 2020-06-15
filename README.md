@@ -6,7 +6,7 @@ docker run -d -e FAH_USER=Masashi_Teruya -e FAH_PASSKEY=************************
 ```
 ## Deploy on Kubernetes
 ```Create secret
-kubectl create secret generic fah --from-literal=*************************
+kubectl create secret generic fah --from-literal=passkey=*************************
 ```
 ```Create deployment and configmap
 apiVersion: apps/v1
