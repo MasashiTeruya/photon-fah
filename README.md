@@ -1,13 +1,14 @@
 # Folding@home on Photon
 This repository provides VMware Photon based Folding@home client to run on container engines.
-## Usage
+## Deploy on Docker
 ```Docker
 docker run -d -e FAH_USER=Masashi_Teruya -e FAH_PASSKEY=************************* -e FAH_TEAM=52737 teruya/photon-fah
 ```
-```Create secret on Kubernetes
+## Deploy on Kubernetes
+```Create secret
 kubectl create secret generic fah --from-literal=*************************
 ```
-```Create deploy on Kubernetes
+```Create deployment and configmap
 apiVersion: apps/v1
 kind: Deployment
 metadata:
